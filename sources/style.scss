@@ -1,0 +1,67 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'slick';
+@import 'slick-theme';
+
+// color
+// $base:
+// $main: lightgray;
+// $accent:
+// $dark:
+
+// neat
+
+$base-grid: (
+    columns: 12,
+    gutter: 20px,
+);
+
+body {
+    background: #ffffff;
+
+//     .wrap {
+//         background-color: #ddd;
+//         padding: 50px 0;
+//
+//         .slick-box {
+//             width: 300px;
+//             margin: 0 auto;
+//
+//             img{
+//               width: 100%;
+//           }
+// }
+// }
+
+    .nav-contents {
+        border-style: solid;
+        list-style: none;
+        @include border-color(#a60b55 #76cd9c null #e8ae1a);
+    }
+
+    // .post-container {
+    //     // display: flex;
+    //     // // align-items: center;
+    //     // justify-content: space-between;
+    //     // max-width: 1000px;
+    //     // margin: auto;
+    //     // padding: 0 10px;
+    //     @include grid-container;
+
+    .post-wrapper {
+        @include grid-container;
+
+        .post-container {
+            @include grid-column(4, $base-grid);
+
+            // max-width: 70%;
+            // margin-right: auto;
+            // margin-left: auto;
+
+            .post-img img{
+                max-width: 70%;
+                max-height: auto;
+          }
+        }
+        }
+        }
